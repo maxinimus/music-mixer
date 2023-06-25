@@ -1,0 +1,21 @@
+.control-bar {
+    width: 100%;
+    background-color: #1db954;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.1s;
+}
+
+.control-bar button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #121212;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.control-bar button:active {
+    transform: scale(0.9);
+}

@@ -1,0 +1,80 @@
+.playlist-view {
+    flex: 1;
+    background-color: #181818;
+    color: white;
+    overflow-y: auto;
+    padding: 20px;
+    padding-top: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.playlist-header {
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.playlist-cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    border: 5px solid #1db954;
+    margin-top: 0px;
+}
+
+.information-holder {
+    padding: 20px;
+}
+
+.track-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.playlist-length {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.information-holder {
+    margin-bottom: 0px;
+}
+
+.playlist-title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-align: left; 
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.creator-name,
+.track-number,
+.playlist-length {
+    font-size: 16px;
+    margin: 0;
+}
+
+.playlist-title-link {
+    text-decoration: none;
+    color: inherit; /* Keep the same color as the h2 title */
+}
+
+.playlist-title-link:hover {
+    color: #1db954;    
+}

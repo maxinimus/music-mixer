@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #080404;
+}
+
+/* Include PlaylistColumn CSS */
+.App > div:first-child {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Include TrackList CSS */
+.App > div:nth-child(2) {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Include ControlBar CSS */
+.App > div:last-child {
+  height: 60px;
+}
+
+.main-content {
+  display: flex;
+  overflow: hidden;
+}
