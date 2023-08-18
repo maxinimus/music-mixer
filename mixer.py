@@ -67,7 +67,6 @@ def get_all_tracks_from_playlist(playlist_id, sp):
 
 # get a list of track names from a list of track ids
 def get_track_names_from_ids(track_ids, sp):
-    print(track_ids)
     sp = authenticate()
     track_names = []
     for track_id in track_ids:

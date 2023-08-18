@@ -37,21 +37,13 @@ def tracks():
     if None == playlist_id:
         return jsonify({'status': 'error', 'message': 'playlist not found'})
     
-    print('0')
     track_ids = m.get_all_tracks_from_playlist(playlist_id, sp)
-    print('1')
     tracks_names = m.get_track_names_from_ids(track_ids, sp)
-    print('2')
     track_img_url = m.get_track_img_urls(track_ids, sp)
-    print('3')
     playlist_img_url = m.get_playlist_image(playlist_id, sp)
-    print('4')
     number_of_tracks = len(track_ids)
-    print('5')
     playlist_length = m.get_playlist_length(playlist_id, sp)
-    print('6')
     creator_name = m.get_playlist_creator_name(playlist_id, sp)
-    print('7')
 
     return jsonify({
     'status': 'success', 
